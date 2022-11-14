@@ -39,7 +39,7 @@ spec:
           value: http://object-detection-rest:8080/predictions
         - name: USERNAME
           value: user1
-        image: "image-registry.openshift-image-registry.svc:5000/cicd/object-detection-app-git"
+        image: "image-registry.openshift-image-registry.svc:5000/cicd/object-detection-app-git:2022-11-14-08-30-05"
         imagePullPolicy: Always
         name: object-detection-app-git
         ports:
