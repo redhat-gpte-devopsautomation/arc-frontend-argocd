@@ -3,7 +3,7 @@ bases:
 patches:
 - target:
     kind: Deployment
-    name: web-ui
+    name: object-detection-app-git
   patch: |-
     - op: replace
       path: /spec/template/spec/containers/0/image
