@@ -3,8 +3,8 @@ bases:
 patches:
 - target:
     kind: Deployment
-    name: object-detection-app-git
+    name: object-detection-app
   patch: |-
     - op: replace
       path: /spec/template/spec/containers/0/image
-      value: "image-registry.openshift-image-registry.svc:5000/cicd/object-detection-app-git:2022-09-19-07-46-53"
+      value: "image-registry.openshift-image-registry.svc:5000/cicd/object-detection-app:2022-09-19-07-46-53"
