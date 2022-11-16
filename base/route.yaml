@@ -2,14 +2,14 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   labels:
-    app: object-detection-app-git
-    app.kubernetes.io/component: object-detection-app-git
-    app.kubernetes.io/instance: object-detection-app-git
-    app.kubernetes.io/name: object-detection-app-git
+    app: object-detection-app
+    app.kubernetes.io/component: object-detection-app
+    app.kubernetes.io/instance: object-detection-app
+    app.kubernetes.io/name: object-detection-app
     app.kubernetes.io/part-of: object-detection
     app.openshift.io/runtime: nodejs
     app.openshift.io/runtime-version: 16-ubi8
-  name: object-detection-app-git
+  name: object-detection-app
 spec:
   port:
     targetPort: 8080-tcp
@@ -18,6 +18,6 @@ spec:
     termination: edge
   to:
     kind: Service
-    name: object-detection-app-git
+    name: object-detection-app
     weight: 100
   wildcardPolicy: None
